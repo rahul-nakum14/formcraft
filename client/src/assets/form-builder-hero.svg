@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#F9FAFB" />
+  
+  <!-- Form Builder UI -->
+  <rect x="50" y="40" width="700" height="420" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2" />
+  
+  <!-- Header -->
+  <rect x="50" y="40" width="700" height="60" rx="8 8 0 0" fill="#6366F1" />
+  <text x="80" y="80" font-family="Arial" font-size="20" font-weight="bold" fill="white">FormCraft Builder</text>
+  <rect x="600" y="55" width="120" height="30" rx="4" fill="white" fill-opacity="0.2" />
+  <text x="620" y="76" font-family="Arial" font-size="14" fill="white">Preview</text>
+  
+  <!-- Left Panel - Elements -->
+  <rect x="50" y="100" width="200" height="360" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1" />
+  <text x="70" y="130" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Form Elements</text>
+  
+  <!-- Element Types -->
+  <rect x="70" y="150" width="160" height="40" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="85" y="175" font-family="Arial" font-size="14" fill="#374151">Text Field</text>
+  
+  <rect x="70" y="200" width="160" height="40" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="85" y="225" font-family="Arial" font-size="14" fill="#374151">Email</text>
+  
+  <rect x="70" y="250" width="160" height="40" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="85" y="275" font-family="Arial" font-size="14" fill="#374151">Number</text>
+  
+  <rect x="70" y="300" width="160" height="40" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="85" y="325" font-family="Arial" font-size="14" fill="#374151">Dropdown</text>
+  
+  <rect x="70" y="350" width="160" height="40" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="85" y="375" font-family="Arial" font-size="14" fill="#374151">Checkbox</text>
+  
+  <rect x="70" y="400" width="160" height="40" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="85" y="425" font-family="Arial" font-size="14" fill="#374151">File Upload</text>
+  
+  <!-- Main Canvas -->
+  <rect x="250" y="100" width="350" height="360" fill="white" />
+  <text x="265" y="130" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Form Canvas</text>
+
+  <!-- Form Elements in Canvas -->
+  <rect x="265" y="150" width="320" height="60" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="280" y="170" font-family="Arial" font-size="12" fill="#6B7280">Name</text>
+  <rect x="280" y="180" width="290" height="20" rx="4" fill="#F9FAFB" />
+
+  <rect x="265" y="220" width="320" height="60" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="280" y="240" font-family="Arial" font-size="12" fill="#6B7280">Email</text>
+  <rect x="280" y="250" width="290" height="20" rx="4" fill="#F9FAFB" />
+
+  <rect x="265" y="290" width="320" height="80" rx="4" fill="white" stroke="#6366F1" stroke-width="2" />
+  <text x="280" y="310" font-family="Arial" font-size="12" fill="#6B7280">Message</text>
+  <rect x="280" y="320" width="290" height="40" rx="4" fill="#F9FAFB" />
+
+  <rect x="265" y="380" width="120" height="40" rx="4" fill="#6366F1" />
+  <text x="295" y="405" font-family="Arial" font-size="14" fill="white">Submit</text>
+
+  <!-- Right Panel - Properties -->
+  <rect x="600" y="100" width="150" height="360" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1" />
+  <text x="615" y="130" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Properties</text>
+
+  <!-- Property Fields -->
+  <text x="615" y="160" font-family="Arial" font-size="12" fill="#374151">Label</text>
+  <rect x="615" y="170" width="120" height="20" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="625" y="185" font-family="Arial" font-size="12" fill="#6B7280">Message</text>
+
+  <text x="615" y="210" font-family="Arial" font-size="12" fill="#374151">Placeholder</text>
+  <rect x="615" y="220" width="120" height="20" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="625" y="235" font-family="Arial" font-size="12" fill="#6B7280">Enter a message...</text>
+
+  <text x="615" y="260" font-family="Arial" font-size="12" fill="#374151">Required</text>
+  <rect x="615" y="270" width="20" height="20" rx="4" fill="white" stroke="#6366F1" stroke-width="2" />
+  <rect x="620" y="275" width="10" height="10" rx="2" fill="#6366F1" />
+
+  <text x="615" y="310" font-family="Arial" font-size="12" fill="#374151">Min Length</text>
+  <rect x="615" y="320" width="60" height="20" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="625" y="335" font-family="Arial" font-size="12" fill="#6B7280">10</text>
+
+  <text x="615" y="360" font-family="Arial" font-size="12" fill="#374151">Max Length</text>
+  <rect x="615" y="370" width="60" height="20" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1" />
+  <text x="625" y="385" font-family="Arial" font-size="12" fill="#6B7280">500</text>
+</svg>
