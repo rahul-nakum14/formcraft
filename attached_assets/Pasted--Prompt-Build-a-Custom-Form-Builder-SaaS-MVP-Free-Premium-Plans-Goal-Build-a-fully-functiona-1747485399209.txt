@@ -1,0 +1,133 @@
+🔧 Prompt: Build a Custom Form Builder SaaS MVP (Free & Premium Plans)
+Goal: Build a fully functional SaaS form builder MVP where users can create, customize, and embed forms, collect responses, and view analytics. Include Stripe integration (India) for managing Free & Premium plans. Use MongoDB as the database.
+
+✅ MVP Requirements
+👥 Authentication
+Email/password signup & login
+
+Email verification (required before login)
+
+Password reset
+
+Secure session handling
+
+👤 User Roles & Plan Management
+Two plans: Free & Premium
+
+Integrate Stripe (India) for subscription & billing
+
+Free Plan:
+
+Max 3 forms
+
+Basic analytics
+
+100 form submissions
+
+Form expiration settings
+
+Premium Plan:
+
+Unlimited forms & submissions
+
+Advanced analytics
+
+Email notifications
+
+CAPTCHA support
+
+Custom success message
+
+Custom redirect URL
+
+Form expiration settings
+
+🧰 Core Features
+📋 Form Builder
+Create, edit, preview, and delete forms
+
+Fields: Text, Email, Phone, Dropdown, Radio, Checkbox, File Upload
+
+Basic customization:
+
+Set background color
+
+Background image via URL
+
+Drag & drop or block-based UI (keep it simple)
+
+🚀 Form Management
+Save as draft or publish
+
+Shareable form link
+
+Embed code (JS snippet or iframe)
+
+Enable/disable form (expiration logic)
+
+📈 Analytics & Submissions
+View form submissions (filter by date/form)
+
+Export to CSV
+
+Basic Analytics (Free): Total views, submissions
+
+Advanced Analytics (Premium): Geo location, device info, time-based trends
+
+📩 Notifications
+Email notifications (Premium only)
+
+Notify admin on each submission
+
+Optional auto-responder to users
+
+⚙️ Admin / Settings
+User dashboard: list forms, analytics, submissions
+
+Subscription management page
+
+Profile management
+
+Billing info via Stripe Customer Portal
+
+🧱 Tech Stack
+Frontend: React + Tailwind CSS (minimal, responsive, beautiful UI)
+
+Backend: Node.js + Express
+
+Database: MongoDB (you will provide the URL)
+
+Auth: JWT with email verification
+
+Payments: Stripe integration (Indian standard – INR, GST, etc.)
+
+Email: Use nodemailer (or Mailgun, Postmark, etc. if needed)
+
+📦 Deployment-Ready MVP
+Docker (optional)
+
+Environment-based config (for Stripe keys, MongoDB URL, etc.)
+
+Production-ready build with:
+
+Secure endpoints
+
+Rate limiting for APIs
+
+Input validation (Zod or Joi)
+
+🧪 Testing & QA (Minimal but important)
+Validate form logic
+
+Prevent abuse (rate limits, CAPTCHA on premium)
+
+Test payments, email flow, and auth lifecycle
+
+✨ UI/UX Suggestions
+Simple, modern design (Google Forms + Typeform hybrid)
+
+Onboarding tips for new users
+
+Toggle dark/light mode (optional)
+
+Responsive layout for mobile use
