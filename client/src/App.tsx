@@ -73,11 +73,11 @@ function App() {
         </AuthGuard>
       </Route>
       
-      <Route path="/dashboard/analytics">
+      {/* <Route path="/dashboard/analytics">
         <AuthGuard>
           <Analytics />
         </AuthGuard>
-      </Route>
+      </Route> */}
       
       <Route path="/dashboard/settings">
         <AuthGuard>

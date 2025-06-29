@@ -99,7 +99,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
                   Forms
                 </a>
               </Link>
-              <Link href="/dashboard/analytics">
+              {/* <Link href="/dashboard/analytics">
                 <a
                   className={`${
                     isActive('/dashboard/analytics')
@@ -109,7 +109,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
                 >
                   Analytics
                 </a>
-              </Link>
+              </Link> */}
               <Link href="/dashboard/settings">
                 <a
                   className={`${
