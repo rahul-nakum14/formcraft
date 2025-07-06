@@ -4,6 +4,7 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "outDir": "dist/server",
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "target": "ES2022"

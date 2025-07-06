@@ -1,32 +1,27 @@
 {
   "version": 2,
-  "buildCommand": "npm run build:vercel",
+  "buildCommand": "vite build && npm run build:server",
   "outputDirectory": "dist/public",
   "builds": [
     {
-      "src": "server/index.ts",
+      "src": "dist/server/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/server/index.ts"
+      "dest": "/dist/server/index.js"
     },
     {
       "src": "/uploads/(.*)",
-      "dest": "/server/index.ts"
+      "dest": "/dist/server/index.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/server/index.ts"
+      "dest": "/dist/server/index.js"
     }
   ],
-  "functions": {
-    "server/index.ts": {
-      "maxDuration": 30
-    }
-  },
   "env": {
     "NODE_ENV": "production"
   }
