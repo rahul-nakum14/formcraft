@@ -435,7 +435,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Check if form is expired
-      if (form.expiresAt && new Date(form.expiresAt) < new Date()) {
+      if (
+        form.expiresAt &&
+        new Date(
+          typeof form.expiresAt === 'string' || typeof form.expiresAt === 'number'
+            ? form.expiresAt
+            : form.expiresAt instanceof Date
+              ? form.expiresAt.toISOString()
+              : form.expiresAt.toString()
+        ) < new Date()
+      ) {
         return res.status(403).json({ message: "This form has expired" })
       }
 

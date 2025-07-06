@@ -114,17 +114,16 @@ export const sendFormSubmissionNotification = async (
       let displayValue = ""
 
       // Handle different types of values
-      if (typeof value === "object" && value !== null) {
-        if (value.name && value.size) {
-          // File upload
-          displayValue = `📎 ${value.name} (${Math.round(value.size / 1024)}KB)`
-        } else {
-          displayValue = JSON.stringify(value)
-        }
-      } else if (Array.isArray(value)) {
-        displayValue = value.join(", ")
+      if (
+        typeof value === "object" &&
+        value !== null &&
+        "name" in value &&
+        "size" in value
+      ) {
+        // File upload
+        displayValue = `📎 ${(value as { name: string; size: number }).name} (${Math.round((value as { size: number }).size / 1024)}KB)`;
       } else {
-        displayValue = String(value)
+        displayValue = JSON.stringify(value);
       }
 
       return `

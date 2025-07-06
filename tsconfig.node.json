@@ -7,7 +7,11 @@
     "outDir": "dist/server",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "target": "ES2022"
+    "target": "ES2022",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    }
   },
-  "include": ["vite.config.ts", "server/**/*", "shared/**/*"]
+  "include": ["server/**/*", "shared/**/*", "vite.config.ts"]
 }
