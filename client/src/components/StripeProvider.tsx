@@ -25,9 +25,9 @@ export const StripeProvider: React.FC<StripeProviderProps> = ({ children }) => {
   useEffect(() => {
     const initializeStripe = async () => {
       try {
-        if (!import.meta.env.VITE_STRIPE_PUBLIC_KEY) {
-          throw new Error('Missing required Stripe key: VITE_STRIPE_PUBLIC_KEY');
-        }
+        // if (!import.meta.env.VITE_STRIPE_PUBLIC_KEY) {
+        //   throw new Error('Missing required Stripe key: VITE_STRIPE_PUBLIC_KEY');
+        // }
         
         const stripeInstance = await loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
         setStripe(stripeInstance);

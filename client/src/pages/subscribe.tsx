@@ -12,9 +12,9 @@ import { useQuery } from '@tanstack/react-query';
 import { UserType } from '@/lib/types';
 
 // Initialize Stripe
-if (!import.meta.env.VITE_STRIPE_PUBLIC_KEY) {
-  throw new Error('Missing required Stripe key: VITE_STRIPE_PUBLIC_KEY');
-}
+// if (!import.meta.env.VITE_STRIPE_PUBLIC_KEY) {
+//   throw new Error('Missing required Stripe key: VITE_STRIPE_PUBLIC_KEY');
+// }
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
 // CheckoutForm component
